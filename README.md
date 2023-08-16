@@ -5,11 +5,11 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version no la recuerod
 
-* System dependencies
+* System dependencies tuve que usar sqlite porque postgres no me funca 
 
-* Configuration
+* Configuration rails s y ejecutar 
 
 * Database creation
 
