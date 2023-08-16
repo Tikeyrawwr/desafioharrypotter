@@ -5,11 +5,13 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+require 'faker'
 
 10.times do
   Character.create(
-    name: Faker::Movies::HarryPotter.character,
-    location: Faker::Movies::HarryPotter.location,
-    house: Faker::Movies::HarryPotter.house
+    name: Faker::Name.name,
+    location: Faker::Address.city,
+    house: Faker::Movies::HarryPotter.house,
+   image_url: Faker::LoremFlickr.image(size: "300x300", search_terms: ['wizard'])
   )
 end
